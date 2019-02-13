@@ -8,7 +8,7 @@ public class VuePropositions extends Canvas  {
 
 	public VuePropositions() {
 		super();
-		this.setSize(Modele.N_TENTATIVE*150,500);
+		this.setSize(Modele.N_TENTATIVE*150,Modele.DIFFICULTE*150);
 		this.setBackground(Color.GRAY);
 		
 		

@@ -18,7 +18,10 @@ public class VueClavier extends Panel{
 		ArrayList<Button> liste_bouttons= new ArrayList<Button>();
 		for (int i = 0; i<Modele.COULEUR.length;i++) {
 			b.setBackground(Modele.COULEUR[i]);
-			liste_bouttons.add(b);;
+			b.setSize(200,200);
+			liste_bouttons.add(b);
+			liste_bouttons.get(i).addActionListener(a);
+			this.add(liste_bouttons.get(i));
 			
 		}			
 	}
