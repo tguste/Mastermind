@@ -3,9 +3,11 @@ import java.util.Enumeration;
 
 public class Modele {
 	
-	private static Color[] couleur = {Color.yellow,Color.green,Color.blue,Color.magenta,Color.red,Color.orange,Color.white,Color.black};
-	int n_tentative;
-	int difficulte;
+	public static final Color[] COULEUR = {Color.yellow,Color.green,Color.blue,Color.magenta,Color.red,Color.orange,Color.white,Color.black};
+	public static int N_TENTATIVE;
+	public static int DIFFICULTE;
 	Enumeration etat;
+	Range proposition;
+	int tentative;
 
 }
