@@ -2,7 +2,7 @@ import java.awt.Color;
 
 public class Range {
 	
-	Color[] jeton;
+	int[] jeton = new int[Modele.DIFFICULTE];
 	int indiceJeton;
 	int[] blancNoir = new int[2];
 	
