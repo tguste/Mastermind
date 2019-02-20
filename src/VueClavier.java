@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.List;
 import java.awt.Panel;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemListener;
 import java.util.ArrayList;
 
 public class VueClavier extends Panel{
@@ -12,7 +13,7 @@ public class VueClavier extends Panel{
 	
 	
 	
-	public VueClavier(ActionListener a) {
+	public VueClavier(ActionListener a,Modele m) {
 		super();
 		this.setBackground(Color.white);
 		

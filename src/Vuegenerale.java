@@ -13,11 +13,15 @@ public class Vuegenerale extends Frame implements WindowListener, ActionListener
 	}
 	
 	public Vuegenerale() {
+		
+		Modele modl = new Modele();
+		Controleur ctrl = new Controleur(modl);
+		
 		this.setLayout(new BorderLayout());
 		VuePropositions vp = new VuePropositions();
 		this.add(vp,BorderLayout.CENTER);
 		
-		VueClavier vc = new VueClavier(this);
+		VueClavier vc = new VueClavier(modl,ctrl);
 		this.add(vc,BorderLayout.SOUTH);
 		
 		this.addWindowListener(this);
